@@ -26,14 +26,13 @@ body{
     background-image: url(./images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: contain;
 }
 
 main{
     display: grid;
     row-gap: 3rem;
-    max-width: 1440px;
-    width:95%;
-    margin: 100px auto 10px;
+  
 }
 
 section.history{
@@ -43,6 +42,13 @@ section.history{
    text-align: center;
    row-gap: 1.5rem;
    
+}
+
+section.history, section.snippets, section.clipboard, section.supercharge, section.companies, .clipboard2, .wrapper{
+    max-width: 1440px;
+    width:95%;
+    margin: 100px auto 10px;
+
 }
 
 section.history figure img{
@@ -317,13 +323,16 @@ section.supercharge .super-bottom img{
 
 .lower{
     background-color: hsla(202, 11%, 66%, 0.18);
+   
+}
+
+.wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem 5rem;
-    margin-top: 5rem;
+   
 }
-
 .lower-items{
     display: flex;
     align-items: center;
@@ -351,7 +360,7 @@ section.supercharge .super-bottom img{
     align-self: flex-start;  
 }
 
-.lower-items .install{
+.lower-items .nstall{
     align-self: flex-start;
 }
 
@@ -374,7 +383,7 @@ section.supercharge .super-bottom img{
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1074px){
 
     body{
         background-image: url(./images/bg-header-mobile.png);
@@ -416,7 +425,7 @@ margin-top: 2rem;
     transition: all 0.35s ease;
  }
 
- .lower{
+ .wrapper{
     flex-direction: column;
  }
 
