@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+
+    /* ## Colors
+
+    ### Primary */
+    
+--StrongCyan: hsl(171, 66%, 44%);
+--LightBlue: hsl(233, 100%, 69%);
+    
+    /* ### Neutral */
+    
+--DarkGrayishBlue: hsl(210, 10%, 33%);
+--GrayishBlue: hsl(201, 11%, 66%);
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+main{
+    display: grid;
+    row-gap: 3rem;
+    max-width: 1440px;
+    width:95%;
+    margin: 100px auto 10px;
+}
+
+section.history{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   text-align: center;
+   row-gap: 1.5rem;
+   
+}
+
+section.history figure img{
+    width: 9rem;
+    margin-bottom: 1.5rem;
+}
+
+.history-text h1{
+    max-width: 800px;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--DarkGrayishBlue);
+}
+
+.history-text p{
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+    margin: 0 auto;
+    transition: all 0.35s ease;
+}
+
+.buttons{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    column-gap: 1rem;
+    margin-top: 1rem;
+    transition: all 0.35s ease;
+   
+    
+}
+
+button.button-ios:hover{
+   background-color:  hsl(171, 76%, 32%) ;
+   transform: scale(1.05);
+}
+
+button.buttonmac:hover {
+    background-color:  hsl(233, 57%, 51%);
+    transform: scale(1.05);
+
+
+}
+
+button.button-ios, button.buttonmac{
+    padding: 15px 45px;
+    border-radius: 25px;;
+    border: none;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.139);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background-color .35s ease, transform 0.35s ease;
+    
+}
+
+button.button-ios{
+    background-color: var(--StrongCyan);
+    box-shadow: 0px 2px 1px  hsl(171, 83%, 33%);
+    font-weight: 300;
+    letter-spacing: .3px;
+   
+
+}
+
+button.buttonmac{
+    background-color: var(--LightBlue);
+    box-shadow: 0px 2px 1px  hsl(233, 57%, 52%);
+    font-weight: 300;
+    letter-spacing: .3px;
+    
+}
+
+section.snippets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    row-gap: 3rem;
+    transition: all 0.5s ease;
+    
+}
+
+
+section.snippets .uppertext{
+    max-width: 700px;
+}
+section.snippets .uppertext h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--DarkGrayishBlue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+}
+
+section.snippets .uppertext p{
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+section.snippets .img-txt1{
+    display: flex;
+    column-gap: 4rem;
+    align-items: center;
+    width:100%;
+    position: relative;
+    right:40px;
+}
+
+section.snippets .img-txt1 figure img{
+    width:100%;
+}
+
+
+
+.lowertext{
+  
+display: grid;
+row-gap: 4rem;
+margin-bottom: 4rem;
+
+  
+  
+}
+
+.lowertext h3{
+font-weight: 500;
+font-size: 1.5rem;
+color: var(--DarkGrayishBlue);
+}
+
+.lowertext p{
+max-width: 325px;
+font-size: 1rem;
+line-height: 1.7;
+margin-top: .7rem;
+color: var(--GrayishBlue);
+}
+
+.lowertext p.lt-txt1{
+    max-width: 350px;
+}
+
+section.clipboard{
+    display: grid;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+section.clipboard .clipboard-text{
+    text-align: center;
+  
+}
+
+section.clipboard .clipboard-text h2{
+    font-weight: 600;
+    color: var(--DarkGrayishBlue);
+    font-size: 2rem;
+}
+
+section.clipboard .clipboard-text p{
+    max-width: 600px;
+    margin: 3rem auto;
+    color: var(--GrayishBlue);
+    margin-bottom: 5rem;
+    line-height: 1.7;
+}
+
+section.clipboard figure img{
+    width:100%;
+}
+
+section.supercharge{
+    display: grid;
+    row-gap: 4rem;
+}
+
+section.supercharge .super-top{
+    justify-self: center;
+}
+
+.super-top p{
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+
+section.supercharge .super-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+section.supercharge .super-bottom p {
+    max-width: 350px;
+}
+
+section.supercharge .super-bottom img{
+    margin-bottom: 2rem;
+}
+
+.supercharge h2{
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.super-bottom h3{
+    color: var(--DarkGrayishBlue);
+    margin-bottom: .5rem;
+}
+
+.super-bottom p{
+    color: var(--GrayishBlue);
+    line-height: 1.7;
+
+
+}
+
+.companies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.clipboard2{
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+.clipboard2 h2{
+    color: var(--DarkGrayishBlue);
+    font-size: 2rem;
+}
+
+.clipboard2 p{
+    max-width:525px;
+    color:var(--GrayishBlue);
+    line-height: 1.7;
+}
+
+.clipboard2 button{
+    /* margin: 2rem auto; */
+    margin-top:2rem;
+    display: grid;
+    margin: 0 auto;
+}
+
+
+.buttons2 .button-ios{
+    margin-top: 1rem;
+}
+.buttons2 .buttonmac{
+    margin-top: 2rem;
+}
+
+
+
+.lower{
+    background-color: hsla(202, 11%, 66%, 0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    margin-top: 5rem;
+}
+
+.lower-items{
+    display: flex;
+    align-items: center;
+    column-gap: 7rem ;
+    font-size: 1.1rem;
+    color: var(--DarkGrayishBlue);
+
+}
+
+.lower-items p{
+    margin: 15px 0 15px 0;
+    transition: all .25s ease;
+}
+
+.lower-items p:hover{
+    color: var(--StrongCyan);
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.lower-items .faq{
+    align-self: flex-start;
+}
+.lower-items .privacy{
+    align-self: flex-start;  
+}
+
+.lower-items .install{
+    align-self: flex-start;
+}
+
+.lower img{
+    width: 60px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    margin-left: 1.3rem;
+    transition: all .25s ease;
+    
+
+}
+
+.fa-brands:hover{
+    color: var(--StrongCyan);
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px){
+
+    body{
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: contain ;
+        background-repeat: no-repeat;
+    }
+    .buttons, .buttons2 {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+
+ button.buttonmac{
+    margin-top: 1.5rem;
+    transition: all 0.5s ease;
+ }
+
+ section.history{
+    transition: all 0.5s ease;
+ }
+
+ section.snippets .img-txt1{
+    flex-direction: column;
+ }
+
+ section.supercharge .super-bottom{
+    flex-direction: column;
+ }
+
+ section.clipboard{
+margin-top: 2rem;
+
+ }
+
+ .companies{
+    flex-direction: column;
+    margin-top: 0;
+    row-gap: 4rem ;
+    transition: all 0.35s ease;
+ }
+
+ .lower{
+    flex-direction: column;
+ }
+
+ .lower-items{
+    flex-direction: column ;
+    text-align: center;
+    
+ }
+
+ .lower-items .faq{
+    align-self: center;
+}
+.lower-items .privacy{
+    align-self: center;  
+}
+
+.lower-items .install{
+    align-self: center;
+}
+
+section.snippets{
+  
+    margin-top: 4rem;
+   
+}
+
+section.snippets .img-txt1{
+   
+    position: static;
+    /* right:40px; */
+}
+
+.lowertext{
+    text-align: center;
+    margin-top: 8rem;
+    transition: all 0.35s ease;
+}
+
+.plaintext, .preview{
+    margin-top:2.5rem;
+}
+
+.lower-items p{
+    /* column-gap: 5rem; */
+margin:0;
+
+padding-top: 2rem;
+transition: all 0.35s ease;
+    
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.fa-brands{
+    margin-top:2.5rem;
+    margin-left: 0;
+}
+
+
+
+}
+
+@media (max-width: 525px){
+
+.history-text h1{
+  
+    font-size: 2rem;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; 
+
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
