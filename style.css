@@ -93,7 +93,7 @@ button.buttonmac:hover {
 
 button.button-ios, button.buttonmac{
     padding: 15px 45px;
-    border-radius: 25px;;
+    border-radius: 25px;
     border: none;
     color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.139);
@@ -157,7 +157,7 @@ section.snippets .img-txt1{
     align-items: center;
     width:100%;
     position: relative;
-    right:40px;
+    right:70px;
 }
 
 section.snippets .img-txt1 figure img{
