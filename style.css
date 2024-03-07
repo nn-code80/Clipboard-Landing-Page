@@ -411,6 +411,10 @@ section.supercharge .super-bottom img{
     transition: all 0.5s ease;
  }
 
+ .buttons2 .buttonmac{
+    margin-top: 1.5rem;
+ }
+
  section.history{
     transition: all 0.5s ease;
  }
